@@ -1,0 +1,42 @@
+section#quote
+  div.contain
+    h1#logo HELLO DENVER
+    figure.quote
+      |<blockquote class="current">
+      =latest.text
+      |</blockquote>
+      figcaption 
+        p 
+          |from @
+          a(href="http://twitter.com/#!/"+latest.from_user, target="_blank")=latest.from_user
+          |  at 
+          =latest.created_at
+
+section#participate
+  div.contain
+    h2 THAT&#8217;S INSPIRING!
+    p#instruction
+      | Thanks for collaborating, now 
+      a(href='/') see what other people have said
+      | .
+    
+    section#font
+      h2 HELLO DENVER
+      p
+        | is a typeface designed by Good Apples design studio for Create Denver 2012. The font is free to use for personal and commercial projects.
+      a(href='/downloads/hellodenverfont.zip', class='button') Download the Free Font
+      a(href='#', class='button', target="_blank") Visit the Hello Denver Shop
+      p 
+        | Visit the window shop at 1600 Glenarm in Denver 
+        a(href='http://maps.google.com/maps?q=1600+Glenarm+Place,+Denver,+CO&hl=en&sll=40.014986,-105.270546&sspn=0.489073,0.898132&oq=1600+Glenarm++Denver&hnear=1600+Glenarm+Pl,+Denver,+Colorado+80202&t=m&z=17', target='_blank') (map)
+              
+
+footer
+  div.contain
+    section.logos
+      a(href='http://goodappl.es') Good Apples
+      a(href='#') Create Denver
+    p
+      a(href='#') Development 
+      | by 
+      a(href='http://talentedmrjones.com', target='_blank') The Talented Mr. Jones

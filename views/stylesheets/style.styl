@@ -1,0 +1,267 @@
+dark-background()
+  background transparent url(/images/bg-tile-dark.png) 0 0 scroll repeat
+
+light-background()
+  background transparent url(/images/bg-tile-light.png) 0 0 scroll repeat
+
+border-radius()
+  -webkit-border-radius arguments
+  -moz-border-radius arguments
+  border-radius arguments
+
+quote-shadow()
+  box-shadow 2px 3px 7px rgba(0,0,0,.25)
+
+light-blue=#aee0e8
+mediumgray=#494949
+darkgray=#202020
+
+@font-face
+  font-family 'hellodenverbold';
+  src url('/fonts/hellodenverdisplaybold_v1.5.1-webfont.eot')
+  src url('/fonts/hellodenverdisplaybold_v1.5.1-webfont.eot?#iefix') format('embedded-opentype'),url('/fonts/hellodenverdisplaybold_v1.5.1-webfont.woff') format('woff'),url('/fonts/hellodenverdisplaybold_v1.5.1-webfont.ttf') format('truetype'),url('/fonts/hellodenverdisplaybold_v1.5.1-webfont.svg#HELLODENVERDISPLAYBOLDBold') format('svg')
+  font-weight bold
+  font-style normal
+
+@font-face 
+    font-family 'hellodenverregular'
+    src url('/fonts/hellodenverdisplayregular_v1.5.1-webfont.eot')
+    src url('/fonts/hellodenverdisplayregular_v1.5.1-webfont.eot?#iefix') format('embedded-opentype'),url('/fonts/hellodenverdisplayregular_v1.5.1-webfont.woff') format('woff'),url('/fonts/hellodenverdisplayregular_v1.5.1-webfont.ttf') format('truetype'),url('/fonts/hellodenverdisplayregular_v1.5.1-webfont.svg#HELLODENVERDISPLAYREGULARRg') format('svg')
+    font-weight normal
+    font-style normal
+
+body
+  padding 0
+  margin 0
+  font-family Helvetica
+  font-family "din-condensed-web",sans-serif;
+  font-style normal
+  font-weight 400
+  
+ul
+  margin 0
+  padding 0
+  list-style none
+
+#quotes:after
+  content " "
+  display block
+  visibility hidden
+  height 0
+  clear both
+  
+#logo
+  font-family 'hellodenverbold'
+  font-size 24px
+  color #2f2f2f
+  text-transformation uppercase
+  margin-top 0
+  padding-top 20px
+
+.contain
+  width 1200px
+  margin 0 auto
+
+figure
+  margin 0
+  padding 0
+
+#quote,#latest
+  padding-bottom 100px
+  border-bottom solid 1px black
+  dark-background()
+  
+  figcaption
+  
+    p
+      background #2f2f2f
+      border-radius(5px)
+      font-size 24px
+      color #dadada
+      padding 20px 50px
+      display inline-block
+      position relative
+      left 50%
+      -moz-transform translateX(-50%)
+      -webkit-transform translateX(-50%)
+      margin 0
+      quote-shadow()
+      z-index 2
+      
+      a
+        color inherit
+        text-decoration none
+  
+    p:after
+      -moz-transform skewY(45deg)
+      -webkit-transform skewY(45deg)
+      background #2F2F2F
+      bottom -13.5px
+      content " "
+      display block
+      height 27px
+      left 27px
+      position absolute
+      width 27px
+      z-index -1
+
+blockquote
+  margin 0
+  padding 0
+  letter-spacing 2px
+  font-family 'hellodenverregular'  
+
+blockquote:before
+  display inline
+  content "\201C"
+
+blockquote:after
+  display inline
+  content "\201D"
+
+blockquote.current
+  color light-blue
+  font-size 100px
+  margin-bottom 48px
+  line-height 1.1
+  
+blockquote.historic
+  font-size 37px
+  width 280px
+  padding 20px
+  background darkgray
+  color #dadada
+  border-radius(3px)
+
+#participate
+  background-image -moz-linear-gradient(top, rgba(0,0,0,.4) 0, transparent 6px), -moz-linear-gradient(bottom, rgba(0,0,0,.4) 0, transparent 6px), url(/images/bg-tile-light.png)
+  background-image -webkit-linear-gradient(top, rgba(0,0,0,.4) 0, transparent 6px), -webkit-linear-gradient(bottom, rgba(0,0,0,.4) 0, transparent 6px), url(/images/bg-tile-light.png)
+  padding 46px 0
+  
+  h2
+    font-family 'hellodenverbold'
+    font-size 80px
+    text-align center
+    color mediumgray
+    margin 0 0 20px
+
+#instruction
+  font-size 56px
+  color mediumgray
+  margin-top 0
+  
+  a
+    color light-blue
+  
+  strong
+    font-weight normal
+
+#font
+  background transparent url(/images/bg-tile-medium.png) 18px 18px scroll repeat
+  border-radius(10px)
+  padding 70px 25px
+  color mediumgray
+  text-align center
+  font-size 24px
+  
+  a
+    color inherit
+  
+  p
+    margin 0
+    
+  h2
+    font-family 'hellodenverbold'
+    font-size 48px
+    margin 0 0 10px
+  
+  a.button
+    display block
+    background #2e2e2e
+    border-radius(15px)
+    margin 50px auto
+    width 700px
+    font-size 60px
+    padding 28px 0
+    text-transform uppercase
+    text-decoration none
+    color light-blue
+    line-height 1
+    box-shadow 0 0 7px rgba(0,0,0,.5)
+    
+
+#quotes
+  dark-background()
+  padding-top 40px
+  
+  ul 
+    float left  
+    margin-right 40px
+  
+  ul:first-of-type
+    margin-left 60px
+  
+  figure
+    position relative
+  
+  figure:after
+    -moz-transform skewY(45deg)
+    -webkit-transform skewY(45deg)
+    background darkgray
+    bottom 28px
+    content " "
+    display block
+    height 17px
+    left 17px
+    position absolute
+    width 17px
+  
+  figcaption
+    padding-left 40px
+
+    
+body>footer
+  background darkgray
+  text-align center
+  padding 60px 0 20px
+  color mediumgray
+  
+  a
+    color inherit
+    
+  .logos
+    width 262px
+    height 98px
+    background transparent url(/images/logos.png)
+    margin 0 auto
+    text-align left
+    
+    a
+      display inline-block
+      height 98px
+      text-indent -999em
+    
+    a:nth-of-type(1)
+      width 90px
+      margin-right 75px
+    
+    a:nth-of-type(2)
+      width 95px
+      
+#latest
+  position fixed
+  top 0
+  right 0
+  bottom 0
+  left 0
+  margin 0
+  padding 0
+  
+  figure.quote
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    left: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    width: 1200px;
