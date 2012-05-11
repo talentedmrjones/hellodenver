@@ -4,24 +4,28 @@
  */
 
 @font-face {
-    font-family: 'hellodenverbold';
-    src: url('hellodenverdisplaybold_v1.5.1-webfont.eot');
-    src: url('hellodenverdisplaybold_v1.5.1-webfont.eot?#iefix') format('embedded-opentype'),
-         url('hellodenverdisplaybold_v1.5.1-webfont.woff') format('woff'),
-         url('hellodenverdisplaybold_v1.5.1-webfont.ttf') format('truetype'),
-         url('hellodenverdisplaybold_v1.5.1-webfont.svg#HELLODENVERDISPLAYBOLDBold') format('svg');
-    font-weight: bold;
+    font-family: 'HELLODENVERDISPLAYBOLDBoldRg';
+    src: url('hellodenverdisplaybold_v1.6.eot');
+    src: url('hellodenverdisplaybold_v1.6.eot?#iefix') format('embedded-opentype'),
+         url('hellodenverdisplaybold_v1.6.woff') format('woff'),
+         url('hellodenverdisplaybold_v1.6.ttf') format('truetype'),
+         url('hellodenverdisplaybold_v1.6.svg#HELLODENVERDISPLAYBOLDBoldRg') format('svg');
+    font-weight: normal;
     font-style: normal;
 
 }
 
+
+
+
 @font-face {
-    font-family: 'hellodenverregular';
-    src: url('hellodenverdisplayregular_v1.5.1-webfont.eot');
-    src: url('hellodenverdisplayregular_v1.5.1-webfont.eot?#iefix') format('embedded-opentype'),
-         url('hellodenverdisplayregular_v1.5.1-webfont.woff') format('woff'),
-         url('hellodenverdisplayregular_v1.5.1-webfont.ttf') format('truetype'),
-         url('hellodenverdisplayregular_v1.5.1-webfont.svg#HELLODENVERDISPLAYREGULARRg') format('svg');
+    font-family: 'HELLODENVERDISPLAYREGULARRg';
+    src: url('hellodenverdisplayregular_v1.6.eot');
+    src: url('hellodenverdisplayregular_v1.6.eot?#iefix') format('embedded-opentype'),
+         url('hellodenverdisplayregular_v1.6.woff') format('woff'),
+         url('hellodenverdisplayregular_v1.6.ttf') format('truetype'),
+         url('hellodenverdisplayregular_v1.6.svg#HELLODENVERDISPLAYREGULARRg') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }

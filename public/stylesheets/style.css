@@ -1,28 +1,30 @@
-@font-face{font-family:'hellodenverbold';src:url("/fonts/hellodenverdisplaybold_v1.5.1-webfont.eot");src:url("/fonts/hellodenverdisplaybold_v1.5.1-webfont.eot?#iefix") format('embedded-opentype'),url("/fonts/hellodenverdisplaybold_v1.5.1-webfont.woff") format('woff'),url("/fonts/hellodenverdisplaybold_v1.5.1-webfont.ttf") format('truetype'),url("/fonts/hellodenverdisplaybold_v1.5.1-webfont.svg#HELLODENVERDISPLAYBOLDBold") format('svg');font-weight:bold;font-style:normal}
-@font-face{font-family:'hellodenverregular';src:url("/fonts/hellodenverdisplayregular_v1.5.1-webfont.eot");src:url("/fonts/hellodenverdisplayregular_v1.5.1-webfont.eot?#iefix") format('embedded-opentype'),url("/fonts/hellodenverdisplayregular_v1.5.1-webfont.woff") format('woff'),url("/fonts/hellodenverdisplayregular_v1.5.1-webfont.ttf") format('truetype'),url("/fonts/hellodenverdisplayregular_v1.5.1-webfont.svg#HELLODENVERDISPLAYREGULARRg") format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'hellodenverbold';src:url("/fonts/hellodenverdisplaybold_v1.6.eot");src:url("/fonts/hellodenverdisplaybold_v1.6.eot?#iefix") format('embedded-opentype'),url("/fonts/hellodenverdisplaybold_v1.6.woff") format('woff'),url("/fonts/hellodenverdisplaybold_v1.6.ttf") format('truetype'),url("/fonts/hellodenverdisplaybold_v1.6.svg#HELLODENVERDISPLAYBOLDBold") format('svg');font-weight:bold;font-style:normal}
+@font-face{font-family:'hellodenverregular';src:url("/fonts/hellodenverdisplayregular_v1.6.eot");src:url("/fonts/hellodenverdisplayregular_v1.6.eot?#iefix") format('embedded-opentype'),url("/fonts/hellodenverdisplayregular_v1.6.woff") format('woff'),url("/fonts/hellodenverdisplayregular_v1.6.ttf") format('truetype'),url("/fonts/hellodenverdisplayregular_v1.6.svg#HELLODENVERDISPLAYREGULARRg") format('svg');font-weight:normal;font-style:normal}
 body{padding:0;margin:0;font-family:Helvetica;font-family:"din-condensed-web",sans-serif;font-style:normal;font-weight:400}
 ul{margin:0;padding:0;list-style:none}
 #quotes:after{content:" ";display:block;visibility:hidden;height:0;clear:both}
 #logo{font-family:'hellodenverbold';font-size:24px;color:#2f2f2f;text-transformation:uppercase;margin-top:0;padding-top:20px}
 .contain{width:1200px;margin:0 auto}
 figure{margin:0;padding:0}
-#quote{padding-bottom:100px;border-bottom:solid 1px #000;background:transparent url("/images/bg-tile-dark.png") 0 0 scroll repeat;}
-#quote figcaption p{background:#2f2f2f;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;font-size:24px;color:#dadada;padding:20px 50px;display:inline-block;position:relative;left:50%;-moz-transform:translateX(-50%);-webkit-transform:translateX(-50%);margin:0;box-shadow:2px 3px 7px rgba(0,0,0,0.25);z-index:2}
-#quote figcaption p:after{-moz-transform:skewY(45deg);-webkit-transform:skewY(45deg);background:#2f2f2f;bottom:-13.5px;content:" ";display:block;height:27px;left:27px;position:absolute;width:27px;z-index:-1}
-blockquote{margin:0;padding:0;letter-spacing:2px;font-family:'hellodenverregular'}
+#quote,#latest{padding-bottom:100px;border-bottom:solid 1px #000;background:transparent url("/images/bg-tile-dark.png") 0 0 scroll repeat;}
+#quote figcaption p,#latest figcaption p{background:#2f2f2f;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;font-size:24px;color:#dadada;padding:20px 50px;display:inline-block;position:relative;left:50%;-moz-transform:translateX(-50%);-webkit-transform:translateX(-50%);margin:0;box-shadow:2px 3px 7px rgba(0,0,0,0.25);z-index:2;}
+#quote figcaption p a,#latest figcaption p a{color:inherit;text-decoration:none}
+#quote figcaption p:after,#latest figcaption p:after{-moz-transform:skewY(45deg);-webkit-transform:skewY(45deg);background:#2f2f2f;bottom:-13.5px;content:" ";display:block;height:27px;left:27px;position:absolute;width:27px;z-index:-1}
+blockquote{margin:0;padding:0;letter-spacing:2px;font-family:'hellodenverregular';overflow-x:hidden}
 blockquote:before{display:inline;content:"\201C"}
 blockquote:after{display:inline;content:"\201D"}
 blockquote.current{color:#aee0e8;font-size:100px;margin-bottom:48px;line-height:1.1}
-blockquote.historic{font-size:37px;width:280px;padding:20px;background:#202020;color:#dadada;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
-#participate{background-image:-moz-linear-gradient(top,rgba(0,0,0,0.4) 0,transparent 6px),-moz-linear-gradient(bottom,rgba(0,0,0,0.4) 0,transparent 6px),url("/images/bg-tile-light.png");padding:46px 0}
-#instruction{font-size:60px;color:#494949;margin-top:0;}
+blockquote.historic{font-size:24px;width:280px;padding:20px;background:#202020;color:#dadada;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;box-shadow:2px 3px 7px rgba(0,0,0,0.25)}
+#participate{background-image:-moz-linear-gradient(top,rgba(0,0,0,0.4) 0,transparent 6px),-moz-linear-gradient(bottom,rgba(0,0,0,0.4) 0,transparent 6px),url("/images/bg-tile-light.png");background-image:-webkit-linear-gradient(top,rgba(0,0,0,0.4) 0,transparent 6px),-webkit-linear-gradient(bottom,rgba(0,0,0,0.4) 0,transparent 6px),url("/images/bg-tile-light.png");padding:46px 0;}
+#participate h2{font-family:'hellodenverbold';font-size:80px;text-align:center;color:#494949;margin:0 0 20px}
+#instruction{font-size:56px;color:#494949;margin-top:0;}
 #instruction a{color:#aee0e8}
 #instruction strong{font-weight:normal}
-#font{background:transparent url("/images/bg-tile-medium.png") 18px 18px scroll repeat;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;padding:70px 35px;color:#494949;text-align:center;font-size:24px;}
+#font{background:transparent url("/images/bg-tile-medium.png") 18px 18px scroll repeat;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;padding:70px 25px;color:#494949;text-align:center;font-size:24px;}
 #font a{color:inherit}
-#font p{margin-top:0}
-#font h2{font-family:'hellodenverbold';font-size:48px;margin:0}
-#font a.button{display:inline-block;background:#2e2e2e;-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px;margin-bottom:50px;width:700px;font-size:60px;padding:28px 0;text-transform:uppercase;text-decoration:none;color:#aee0e8;line-height:1;box-shadow:0 0 7px rgba(0,0,0,0.5)}
+#font p{margin:0}
+#font h2{font-family:'hellodenverbold';font-size:48px;margin:0 0 10px}
+#font a.button{display:block;background:#2e2e2e;-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px;margin:50px auto;width:700px;font-size:60px;padding:28px 0;text-transform:uppercase;text-decoration:none;color:#aee0e8;line-height:1;box-shadow:0 0 7px rgba(0,0,0,0.5)}
 #quotes{background:transparent url("/images/bg-tile-dark.png") 0 0 scroll repeat;padding-top:40px;}
 #quotes ul{float:left;margin-right:40px}
 #quotes ul:first-of-type{margin-left:60px}
@@ -35,3 +37,5 @@ body>footer .logos{width:262px;height:98px;background:transparent url("/images/l
 body>footer .logos a{display:inline-block;height:98px;text-indent:-999em}
 body>footer .logos a:nth-of-type(1){width:90px;margin-right:75px}
 body>footer .logos a:nth-of-type(2){width:95px}
+#latest{position:fixed;top:0;right:0;bottom:0;left:0;margin:0;padding:0;}
+#latest figure.quote{-moz-transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);left:50%;margin:0 auto;position:absolute;top:50%;width:1200px}
