@@ -7,3 +7,29 @@ footer
       a(href='https://github.com/talentedmrjones/hellodenver', target='_blank') Development 
       | by 
       a(href='http://talentedmrjones.com', target='_blank') The Talented Mr. Jones
+
+
+div#fb-root
+script(src='http://connect.facebook.net/en_US/all.js')
+script
+
+      FB.init({appId: "172145339580731", status: true, cookie: true});
+
+      function postToFeed() {
+
+        // calling the API ...
+        var obj = {
+          method: 'feed',
+          link: 'http://hellodenver.org',
+          picture: 'http://hellodenver.org/images/profile.jpg',
+          name: 'Hello Denver',
+          caption: 'A free font designed for Create Denver 2012',
+          description: 'Hello Denver is free to download and use however you want. We hope you share it with your friends! Create something you want to share and post it to our wall!'
+        };
+
+        function callback(response) {
+          document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
+        }
+
+        FB.ui(obj, callback);
+      }
